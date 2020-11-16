@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:11.6
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: workshop
+    ports:
+      - "6543:5432"
