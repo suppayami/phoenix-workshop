@@ -7,6 +7,8 @@ defmodule WorkshopWeb.Router do
 
   scope "/api", WorkshopWeb do
     pipe_through :api
+
+    get "/hello", WorkshopController, :index
   end
 
   # Enables LiveDashboard only for development
